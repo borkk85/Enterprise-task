@@ -73,12 +73,14 @@ window.onload = function () {
     showResults();
   });
 
-  searchInput.addEventListener("focus", (e) => {
+  searchInput.addEventListener("focus", () => {
     searchButton.classList.remove("is-hidden");
   });
 
   searchInput.addEventListener("blur", () => {
-    searchButton.classList.add("is-hidden");
+    if(searchInput.value === '') {
+      searchButton.classList.add("is-hidden");
+    }
   });
 
   cancelButton.addEventListener("click", (e) => {

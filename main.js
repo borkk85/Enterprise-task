@@ -36,7 +36,7 @@ window.onload = function () {
             <th>Genre</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class='table-body'>
     `;
 
       books.forEach((book) => {
@@ -151,7 +151,7 @@ window.onload = function () {
             <th>Genre</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class='table-body'>
     `;
 
       filtered.forEach((book) => {
